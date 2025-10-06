@@ -17,7 +17,7 @@ const products = [
         id: 3,
         name: "bola de futebol",
         price: 100.99,
-        image: "https://imgsapp.pe.superesportes.com.br/app/noticia_127117037534/2012/05/15/17494/20120515160708757853u.JPG"
+        image: "https://images.tcdn.com.br/img/img_prod/695909/bola_futebol_de_campo_nike_cbf_academy_brasileirao_2025_2419_1_85aca50af0291dce0dba027b7ae92dcc.jpg"
     },
     {
         id: 4,
