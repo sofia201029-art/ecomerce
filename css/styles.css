@@ -34,11 +34,11 @@ header {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #2c3e50;
+    color: #00740f;
 }
 
 .logo span {
-    color: #3498db;
+    color: #00af00;
 }
 
 nav ul {
@@ -52,13 +52,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #555;
+    color: #2e2e2e;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #3498db;
+    color: #1b9c3b;
 }
 
 .cart-icon {
@@ -83,7 +83,7 @@ nav ul li a:hover {
 
 /* Banner principal */
 .hero {
-    background-color: #3498db;
+    background-color: #30c938;
     color: white;
     padding: 4rem 2rem;
     text-align: center;
@@ -103,7 +103,7 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     background-color: #fff;
-    color: #3498db;
+    color: #00af00;
     padding: 0.8rem 1.5rem;
     border-radius: 4px;
     text-decoration: none;
@@ -168,7 +168,7 @@ nav ul li a:hover {
 .product-price {
     font-size: 1.3rem;
     font-weight: 700;
-    color: #3498db;
+    color: #126ec4;
     margin-bottom: 1rem;
 }
 
@@ -253,7 +253,7 @@ nav ul li a:hover {
 }
 
 .cart-item-price {
-    color: #3498db;
+    color: #00af00;
     font-weight: 600;
 }
 
