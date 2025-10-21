@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: rgb(236, 236, 236);
+    color: #363636;
     line-height: 1.6;
 }
 
@@ -34,11 +34,11 @@ header {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #00740f;
+    color: #b68afc;
 }
 
 .logo span {
-    color: #00af00;
+    color: #2d0370;
 }
 
 nav ul {
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #1b9c3b;
+    color: #734d9e;
 }
 
 .cart-icon {
@@ -83,8 +83,8 @@ nav ul li a:hover {
 
 /* Banner principal */
 .hero {
-    background-color: #30c938;
-    color: white;
+    background-color: rgb(131, 66, 236);
+    color: rgb(255, 255, 255);
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -103,7 +103,7 @@ nav ul li a:hover {
 .btn {
     display: inline-block;
     background-color: #fff;
-    color: #00af00;
+    color: #615fff;
     padding: 0.8rem 1.5rem;
     border-radius: 4px;
     text-decoration: none;
@@ -253,7 +253,7 @@ nav ul li a:hover {
 }
 
 .cart-item-price {
-    color: #00af00;
+    color: #6e13d6;
     font-weight: 600;
 }
 
@@ -275,7 +275,7 @@ nav ul li a:hover {
 .checkout-btn {
     width: 100%;
     padding: 1rem;
-    background-color: #2ecc71;
+    background-color: #9233d1;
     color: white;
     border: none;
     border-radius: 4px;
@@ -285,7 +285,7 @@ nav ul li a:hover {
 }
 
 .checkout-btn:hover {
-    background-color: #27ae60;
+    background-color: #8340f0;
 }
 
 /* Overlay para o carrinho */

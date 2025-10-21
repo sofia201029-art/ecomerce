@@ -11,7 +11,7 @@
     
     <header>
         <div class="header-container">
-            <div class="logo">BOOK<span>Store</span></div>
+            <div class="logo">BRASIL<span>Store</span></div>
             <nav>
                 <ul>
                     <li><a href="#">Início</a></li>
@@ -30,8 +30,8 @@
     </header>
     <!-- Banner principal -->
     <section class="hero">
-        <h1>Livros para sua diversão</h1>
-        <p>Descubra livros novos a cada semana e troque para livros da sua escolha</p>
+        <h1>Um gostinho brasileiro pro seu dia</h1>
+        <p>Descubra produtos cuidadosamente selecionados com design espirado na nossa cultura</p>
         <a href="#products" class="btn">Ver Produtos</a>
     </section>
 
@@ -62,18 +62,18 @@
     <!--INFORMACOES DO SITE-->
     <section id="sobre" class="products">
         <h2 class="section-title">fidelidade</h2>
-        <p>nossa loja tem como começo em 2010, começamos simples com 5 amigos, tinhamos grandes sonhos de escrever e produzir livros, e esse só foi o começo da nossa aventura, começamos apenas com um compputador tentando enter mais sobre issso, eramos jovens, ambiciosos, graças a deus estamos aqui hj, nunca teriamos alcançado tudo isso sozinhos, fico feliz por ainda estavamos juntos.</p>
+        <p>nossa loja tem como começo em 2010, começamos simples com 5 amigos, tinhamos grandes sonhos de viagens e negocias, e esse só foi o começo da nossa aventura, começamos apenas com um compputador tentando enter mais sobre issso, eramos jovens, ambiciosos, graças a deus estamos aqui hj, nunca teriamos alcançado tudo isso sozinhos, fico feliz por ainda estavamos juntos.</p>
     </section>
     <section id="sobre" class="products">
         <h2 class="section-title">Sobre nós</h2>
-        <p>nossa loja tem como objetivo mostrar um pouco do estilo de leitura novo, para fora, nossos produtos vendem por todoa os 129 paises, graças a deus temos alcançado muitas pessoas, hj nossa agencia está espalhada pr todo o brasol. e estamos espandindo para alguns paises da américa, contratamos muitas pessoas, e estamos comemorando isso da melhor maneiro, um evento promocional para nossos clientes.</p>
+        <p>nossa loja tem como objetivo mostrar um pouco do estilo brasileiro, para fora, nossos produtos vendem por todoa os 129 paises, graças a deus temos alcançado muitas pessoas, hj nossa agencia está espalhada pr todo o brasol. e estamos espandindo para alguns paises da américa, contratamos muitas pessoas d brazl e de fora, e estamos comemorando issso da melhor maneiro, um evento promocional para nossos clientes.</p>
     </section>
     <section id="contato" class="products">
         <h2 class="section-title">Contato</h2>
     <!-- Rodapé -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 BookStore. Todos os direitos reservados.</p>
+            <p>&copy; 2025 BrazlStore. Todos os direitos reservados.</p>
             <div class="footer-links">
                 <a href="#">Política de Privacidade</a>
                 <a href="#">Termos de Serviço</a>
