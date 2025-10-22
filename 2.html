@@ -1,0 +1,117 @@
+h3>Lista de Alunos</h3>
+<!-- cria uma tabela -->
+<table id="tabelaAlunos" border="1">
+    <!-- cabeçalho da tabela -->
+    <thead>
+        <!-- linha da tabela -->
+        <tr>
+            <!-- coluna da tabela -->
+            <th>Nome</th>
+            <th>Nascimento</th>
+            <th>Telefone</th>
+            <th>Endereço</th>
+            <th>Excluir</th>
+        </tr>
+    </thead>
+    <!-- corpo da tabela -->
+    <tbody>
+        <!-- Linhas preenchidas pelo JavaScript -->
+    </tbody>
+</table>
+<hr>
+<h3>Adicionar Novo Aluno</h3>
+                    Nome: 
+                    <input type="text" id="nome" name="nome" value="">
+                    <br>
+                    Nascimento: 
+                    <input type="date" id="nascimento" name="nascimento" value="">
+                    <br>
+                    Telefone: 
+                    <input type="text" id="telefone" name="telefone" value="">
+                    <br>
+                    Endereço: 
+                    <input type="text" id="endereco" name="endereco" value="">
+                    <br>
+                    <input type="hidden" name="acao" value="inserir">
+                    <button onclick="cadastrar()">cadastrar</button>
+
+<script>
+    var token = "1fdd62440f5247a5b374c8221ec4a50d";
+         // Exemplo de requisição GET para listar pessoas
+        fetch("https://crudcrud.com/api/"+token+"/pessoas")
+        .then(response => response.json())
+        .then(data => botaTabela(data) )
+        .catch(error => console.error("Erro no GET:", error));
+
+
+        // criamos a função botaTabela que recebe os DADOS da API de parametro
+        function botaTabela(pessoas) {
+            console.log(pessoas);
+            // cria a variavel tabela que pega o corpo da tabela pelo ID
+            // pega a tag Tbody dentro da tabela 
+            // [0] pq getElementsByTagName retorna um array e queremos o primeiro elemento deste array
+            var tabela = document.getElementById("tabelaAlunos").getElementsByTagName("tbody")[0];
+            // inserir os Dados na tabela a partir da variavel do parametro pessoas
+            // foreach (enquanto)
+            pessoas.forEach(function(elemento) {
+                    //  CRIANDO UMA LINHA USANDO UMA FUNÇÃO DO JAVASCRIPT
+                    var linha = tabela.insertRow();
+                    // criando a celula 0 da linha trabalhada
+                    var celulaNome = linha.insertCell(0);
+                    var celulaNascimento = linha.insertCell(1);
+                    var celulaTelefone = linha.insertCell(2);
+                    var celulaEndereco = linha.insertCell(3);
+                    var celulaExcluir = linha.insertCell(4);
+                    // colocando os valores nas celulas criadas
+                    celulaNome.innerHTML = elemento.nome;
+                    celulaNascimento.innerHTML = elemento.nascimento;
+                    celulaTelefone.innerHTML = elemento.telefone;
+                    celulaEndereco.innerHTML = elemento.endereco;
+                    celulaExcluir.innerHTML = '<button onclick="excluir(\'' + elemento._id + '\')">Excluir</button>';
+
+            })
+        }
+
+        function excluir(id) {
+            var token = "1fdd62440f5247a5b374c8221ec4a50d";
+            // Exemplo de requisição DELETE para excluir uma pessoa
+            fetch("https://crudcrud.com/api/"+token+"/pessoas/" + id, {
+                method: "DELETE"
+            })
+            .finally(() => {
+                // redirecionar para a pagina inicial
+                setTimeout(window.location.href = "crudcrud2.php", 2000);
+                
+            });
+        }
+
+    function cadastrar() {
+        var token = "1fdd62440f5247a5b374c8221ec4a50d";
+          // Exemplo de requisição POST para adicionar uma nova pessoa
+        fetch("https://crudcrud.com/api/"+token+"/pessoas", {
+        // metodo de requisição (get, post, put, delete)
+        method: "POST",
+        // cabeçalho da requisição(tipo de conteudo, autorizações, etc...)
+        headers: {
+            "Content-Type": "application/json"
+        },
+        // corpo da requisição (dados que serão enviados)
+        body: JSON.stringify({
+            nome: document.getElementById('nome').value,
+            nascimento: document.getElementById('nascimento').value,
+            endereco: document.getElementById('endereco').value,
+            telefone: document.getElementById('telefone').value
+        })
+        })
+        .then(response => response.json())
+        .then(data => console.log("pessoa criado:", data))
+        .catch(error => console.error("Erro no POST:", error))
+        .finally(() => {
+            // redirecionar para a pagina inicial
+            setTimeout(window.location.href = "crudcrud2.php", 2000);
+            
+        });
+    }
+
+
+</script>
